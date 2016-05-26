@@ -18,7 +18,7 @@
 	<input type="submit" value="test rest delete">
 	</form>
 	
-	<!--  -->
+	<!-- 修改 -->
 	<form action="testput/1" method="post">
 	<input type="hidden" name="_method" value="PUT"/>
 	<input type="submit" value="test rest put">
