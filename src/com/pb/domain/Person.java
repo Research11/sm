@@ -2,11 +2,20 @@ package com.pb.domain;
 
 import java.util.Date;
 
+import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class Person {
 	Integer id;
+	@NotEmpty
 	String name;
+	
 	Integer age;
+	@Email
 	String email;
+	@Past
 	Date bithday;
 	
 	
