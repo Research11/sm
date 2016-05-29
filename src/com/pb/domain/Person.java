@@ -6,6 +6,7 @@ import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 public class Person {
 	Integer id;
@@ -16,6 +17,7 @@ public class Person {
 	@Email
 	String email;
 	@Past
+	@DateTimeFormat(pattern="yyyy-MM-dd")
 	Date bithday;
 	
 	
