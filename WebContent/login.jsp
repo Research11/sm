@@ -9,7 +9,7 @@
 </head>
 <body>
 <a href="login">test sessionAttributes</a>
-
+<!-- 年龄：<input type="text" name="age"/> -->
 <form action="login" method="post">
 	<form:errors path="*"></form:errors>
 	<input type="hidden" name="id" value="1"/>
