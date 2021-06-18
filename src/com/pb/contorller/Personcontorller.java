@@ -3,7 +3,6 @@ package com.pb.contorller;
 import java.util.Date;
 import java.util.Map;
 
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
@@ -36,7 +35,7 @@ public class Personcontorller {
 
 	@RequestMapping(value="/login")
 	//public String save(@ModelAttribute("person1")Person person,Map<String,Object>map,HttpSession session){
-		public String save(@Valid Person person,Map<String,Object>map,HttpSession session,BindingResult result){
+		public String save(@Valid Person person,Map<String,Object>map,BindingResult result){
 		
 		//session.setAttribute("person", person);
 		//map.put("person", person);
